@@ -1,6 +1,7 @@
 # https://wiki.python.org/moin/SimplePrograms
 
 import re
+import sys
 
 print('Hello, world!')
 #############################
@@ -48,3 +49,12 @@ my_purchase = {
 grocery_bill = sum(prices[fruit] * my_purchase[fruit]
                    for fruit in my_purchase)
 print ('I owe the grocer $%.2f' % grocery_bill)
+
+############################
+
+# This program adds up integers in the command line
+try:
+    total = sum(int(arg) for arg in sys.argv[1:])
+    print ('sum =', total)
+except ValueError:
+    print ('Please supply integer arguments')
