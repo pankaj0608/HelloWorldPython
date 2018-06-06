@@ -16,21 +16,22 @@ text = "Donald Trump’s leading economic adviser says the president wants " \
        "of steel and aluminum tariffs that now affect imports from this country," \
        " Mexico and Europe. Donalds pankaj pankaj pankaj pankaj pankaj pankaj pankaj"
 
-words = text.split();
+words = text.split()
 
-print(words);
+print(words)
 
-counter = Counter(words);
+counter = Counter(words)
 
 top_five = counter.most_common(4)
 
 
 # Hello
-print(top_five);
-print(top_five.__getitem__(1));
+print(top_five)
+print(top_five.__getitem__(1))
 
 url = 'http://www.python.org/'
 
 time.sleep(3)
+
 # webbrowser.open_new_tab(url)
 os.rename("./HelloMe1.py","./HelloMe.py" )
