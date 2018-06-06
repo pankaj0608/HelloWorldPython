@@ -1,5 +1,9 @@
 from collections import *
 
+import webbrowser
+import time
+import os
+
 text = "Donald Trump’s leading economic adviser says the president wants " \
        "to strike separate, bilateral trade deals with Canada and Mexico rather" \
        " than continue renegotiating the North American Free Trade Agreement." \
@@ -25,4 +29,8 @@ top_five = counter.most_common(4)
 print(top_five);
 print(top_five.__getitem__(1));
 
+url = 'http://www.python.org/'
 
+time.sleep(3)
+# webbrowser.open_new_tab(url)
+os.rename("./HelloMe1.py","./HelloMe.py" )
