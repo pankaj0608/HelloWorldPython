@@ -1,5 +1,9 @@
 import turtle
 
+class Hello() :
+    
+    def __init__(self):
+        print("Hello Class in Turtle")
 
 def draw_square():
     print("Hello Square")
@@ -28,4 +32,6 @@ def draw_square():
     window.exitonclick()
 
 
-draw_square()
+Hello();
+
+# draw_square()

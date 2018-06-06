@@ -1,4 +1,5 @@
 import os
+import MySquare as Teaser
 
 counter = 0
 
@@ -12,5 +13,6 @@ while counter < 2:
 
 print("Directory : " + os.getcwd())
 
-os.rename("./hsahd.py", "./HelloMe.py")
+# os.rename("./hsahd.py", "./HelloMe.py")
 
+Teaser.Hello()
