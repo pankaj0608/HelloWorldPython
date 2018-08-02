@@ -7,7 +7,7 @@ for c in strHtml:
         inTag = True
     elif c == ">":
         inTag = False
-    elif inTag == False:
+    elif not inTag:
         out = out + c
 
 print("out : ", out)
